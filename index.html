@@ -18,22 +18,40 @@
 
     <body>
         <header>
-          <nav>
-    <div class="nav-wrapper container">
-      <a href="index.html" class="brand-logo">My Website</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="page1.html">Page 1</a></li>
-        <li><a href="page2.html">Page 2</a></li>
-        <li><a href="page3.html">Page 3</a></li>
+          <nav class="nav-extended cyan">
+    <div class="nav-wrapper cyan">
+      <a href="#" class="brand-logo center">Logo</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">one</a></li>
+  <li><a href="#!">two</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">three</a></li>
+</ul>
+<nav class="cyan">
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo center">Logo</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+        <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+        <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+        <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="material-icons right">polymer</i></a></li>
+    </ul>
+  </div>
+</nav>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
       </ul>
-    </div>
-  </nav>
 
     <img class="responsive-img" src="assets/header.jpeg" max-width="100%" height="auto"/>
     </header>
     
     <!-- Main begginging -->
-    <main>
+    <main class="grey">
     <div class ="row container">
     <!--Card 1 beggining-->
         <div class="col s4">
@@ -61,6 +79,7 @@
             <div class="card-content">
               <p>I am a very simple card. I am good at containing small bits of information.
               I am convenient because I require little markup to use effectively.</p>
+                
             </div>
             <div class="card-action">
               <a href="#">This is a link</a>
@@ -84,11 +103,11 @@
           </div>
         </div>
       </div>
-        
+        <iframe width="1" height="1" src="https://www.youtube.com/embed/cCJO1lDjlP0?rel=0&amp;controls=0&amp;showinfo=0;autoplay=1;loop=1" frameborder="0" allowfullscreen></iframe>
     </main>
         
     <!-- Footer beggining -->
-        <footer class="page-footer">
+        <footer class="page-footer cyan">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -108,8 +127,8 @@
           </div>
           <div class="footer-copyright">
             <div class="container">
-            <a class="waves-effect waves-light btn"><i class="material-icons left">developer_mode</i>Twitter</a>
-            © 2014 Copyright Text
+            <a class="waves-effect waves-light btn"><i class="material-icons left">title</i>Twitter</a>
+            Running in the 90's
             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
           </div>
